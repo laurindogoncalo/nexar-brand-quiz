@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#app {
+    max-width: 640px;
+    width: 90%;
+    text-align: center;
+    padding: 2rem;
+}
+
+#logo {
+    width: 120px;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+p {
+    color: #aaaaaa;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #c1121f;
+}
+
+#progresso {
+    font-size: 0.85rem;
+    color: #e63946;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.opcao {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s;
+}
+
+.opcao:hover {
+    border-color: #e63946;
+    background-color: #2a0a0d;
+}
+
+.hidden {
+    display: none;
+}
+
+#resultado {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

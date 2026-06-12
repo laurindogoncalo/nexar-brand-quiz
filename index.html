@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexar Brand Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+
+        <!-- Ecrã inicial -->
+        <div id="intro">
+            <img src="Icon colorido.png" alt="Nexar" id="logo">
+            <h1>Descobre que tipo de marca és</h1>
+            <p>Responde a 5 perguntas e recebe uma recomendação personalizada para o teu negócio.</p>
+            <button onclick="iniciarQuiz()">Começar Quiz</button>
+        </div>
+
+        <!-- Ecrã das perguntas -->
+        <div id="quiz" class="hidden">
+            <div id="progresso"></div>
+            <h2 id="pergunta"></h2>
+            <div id="opcoes"></div>
+        </div>
+
+        <!-- Ecrã de resultado -->
+        <div id="resultado" class="hidden">
+            <h2 id="titulo-resultado"></h2>
+            <p id="descricao-resultado"></p>
+            <a href="https://nexar-branding.netlify.app" target="_blank">
+                <button>Falar com a Nexar</button>
+            </a>
+            <button onclick="reiniciarQuiz()">Repetir Quiz</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
